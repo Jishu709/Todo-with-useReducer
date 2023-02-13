@@ -46,7 +46,7 @@ function App() {
               className="hidden"
               onClick={() => addLeftCell(cellIdx)}
             ></span>
-            <input
+            <input maxLength={1}
               key={cellIdx}
               onChange={(e) => handleInputChange(cellIdx, e.target.value)}
               value={cell}
